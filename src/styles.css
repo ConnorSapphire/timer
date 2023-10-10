@@ -49,7 +49,7 @@ body {
     color: black;
     background-color: white;
     font-size: 16px;
-    padding: 16px;
+    padding: 10px;
     font-weight: bold;
 }
 
@@ -60,5 +60,6 @@ body {
 .timer {
     color: white;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 50px;
+    margin: 5px;
 }
