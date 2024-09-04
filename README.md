@@ -15,6 +15,7 @@
    git clone https://github.com/ConnorSapphire/timer.git
    ```
 2. **Run the web app:**
+
    Open `./src/index.html` in your chosen web browser.
 
 ## License
