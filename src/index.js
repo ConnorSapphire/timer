@@ -12,6 +12,7 @@ shortBtn.addEventListener("click", ()=>{
     timer=null;
     time=600;
     timerContent.innerHTML = "10:00"
+    startBtn.innerHTML = "START";
 });
 
 mediumBtn.addEventListener("click", ()=>{
@@ -19,6 +20,7 @@ mediumBtn.addEventListener("click", ()=>{
     timer=null;
     time=1500;
     timerContent.innerHTML = "25:00"
+    startBtn.innerHTML = "START";
 });
 
 longBtn.addEventListener("click", ()=>{
@@ -26,11 +28,15 @@ longBtn.addEventListener("click", ()=>{
     timer=null;
     time=2700;
     timerContent.innerHTML = "45:00"
+    startBtn.innerHTML = "START";
 });
 
 startBtn.addEventListener("click", ()=>{
     if (timer) {
-        return;
+        clearInterval(timer);
+        timer = null;
+        startBtn.innerHTML = "START";
+        return
     }
     timer = setInterval(()=>{
         time -= 1;
@@ -38,4 +44,5 @@ startBtn.addEventListener("click", ()=>{
         let seconds = Math.floor(time % 60);
         timerContent.innerHTML = `${minutes}:${seconds}`;
     }, 1000);
+    startBtn.innerHTML = "STOP"
 });

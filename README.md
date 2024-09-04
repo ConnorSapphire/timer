@@ -1,10 +1,10 @@
 # Timer
 
-**Timer** is a simple Python-based application designed to keep track of time. This project serves as a basic yet functional tool for time management or tracking specific tasks.
+**Timer** is a simple web-based application designed to keep track of time. This project serves as a basic yet functional tool for time management or tracking specific tasks.
 
 ## Features
 
-- **Start/Stop Timer:** Easily start and stop the timer with simple commands.
+- **Start/Stop Timer:** Easily start and stop the timer with simple buttons.
 - **Time Tracking:** Keeps an accurate count of elapsed time.
 - **User-Friendly:** Simple interface for straightforward use.
 
@@ -14,10 +14,8 @@
    ```bash
    git clone https://github.com/ConnorSapphire/timer.git
    ```
-2. **Run the script:**
-   ```bash
-   python timer.py
-   ```
+2. **Run the web app:**
+   Open `./src/index.html` in your chosen web browser.
 
 ## License
 
